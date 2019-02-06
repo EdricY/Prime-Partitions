@@ -18,15 +18,16 @@ divides(A, B) :- mod(B, A) is 0.
 % gcd(A,B,G) :- A > B, C is A-B, gcd(C,B,G).
 % gcd(A,B,G) :- B > A, C is B-A, gcd(C,A,G).
 
-bet(N, M, K) :- N =< M, K = N.
-bet(N, M, K) :- N < M, N1 is N+1, bet(N1, M, K).
+% https://stackoverflow.com/questions/18337235/can-you-write-between-3-in-pure-prolog
+% bet(N, M, K) :- N =< M, K = N.
+% bet(N, M, K) :- N < M, N1 is N+1, bet(N1, M, K).
 
-listBetween(L, A, B) :-
-  findall(X, bet(A, B, X), L).
+% listBetween(L, A, B) :-
+%   findall(X, bet(A, B, X), L).
 
 % this one can't generate the list
 % listBetween2(L, A, B) :-
 %   findall(X, (A =< X, B >= X), L).
 
 listPrimesBetween(L, A, B) :-
-  findall(X, (bet(A, B, X), prime(X)), L).
+  findall(X, (between(A, B, X), prime(X)), L).
