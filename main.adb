@@ -15,7 +15,7 @@ is
     if N <= 1 then
       return False;
     end if;
-    for I in 2 .. (Integer(Sqrt(Float(N)))) loop --TODO use sqrt
+    for I in 2 .. (Integer(Sqrt(Float(N)))) loop
       if (N mod I = 0) then
         return False;
       end if;
