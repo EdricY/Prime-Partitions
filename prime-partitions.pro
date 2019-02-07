@@ -10,8 +10,6 @@ prime2(X, N) :-
   )
   ; true.
 
-% prime2(X, N) :- not(divides(X, N)), prime2(X + 1, N).
-
 divides(A, B) :- mod(B, A) is 0.
 
 listPrimesBetween(L, A, B) :-
@@ -35,3 +33,14 @@ isPrimePartition(N, L) :-
   sum(L, N),
   X is listPrimesBetween(X, 0, N),
   maplist(prime, L).
+
+% http://eclipseclp.org/doc/bips/lib/lists/subset-2.html
+% mySubset(?Sublist, +List)
+mySubset([], []).
+mySubset([X|L],[X|S]) :- mySubset(L, S).
+mySubset(L, [_|S]) :- mySubset(L, S).
+
+primePartition(N, L) :-
+  listPrimesBetween(PS, 2, N),
+  mySubset(L, PS),
+  sum(L, N).
