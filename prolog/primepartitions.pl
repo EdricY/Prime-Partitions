@@ -3,7 +3,7 @@ prime(A) :-
   prime2(2, A).
 
 prime2(X, N) :-
-  X > sqrt(N) -> ! ;
+  X > sqrt(N) -> true ;
   mod(N, X) =\= 0,
   X1 is X + 1,
   prime2(X1, N).
