@@ -17,6 +17,7 @@ plus3 :: Integer -> Integer
 
 plus3 x = x+3
 
+-- https://stackoverflow.com/questions/19772427/haskell-generate-subsets
 subsets :: [Integer] -> [[Integer]]
 subsets [] = [[]]
 subsets (x:xs) = subsets xs ++ map (x:) (subsets xs)
