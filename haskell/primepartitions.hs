@@ -48,58 +48,7 @@ sumsTo n [] =
   if n == 0 then True
   else False
 
-main = primePartitions 42
--- primePartitions n =
---   primePartitions2 n 1 []
-
--- primePartitions2 :: Integer -> Integer -> [Integer] -> [[Integer]] -> [[Integer]]
-
--- primePartitions2 n k part full =
---   let primes = primesBetween (k+1) n
-  
-  
---   primePartitions3 n k part full p
---   if n == 0 then full++[part]
---   else
---     if n > k then
---       map (primePartitions3 n k part full) primes
---       primePartitions3 (n-p) p (part++[p])
---       else 
-
--- primePartitions n =
---   map (primePartitions2 n 1 [] []) (primesBetween 2 n)
-
--- primePartitions2 n k part full p =
---   if n == 0 then (full++[part])
---   else
---     if n > k then map (primePartitions2 (n-p) p (part++[p])) (primesBetween (k+1) n)
---     else []
-
--- ppr n k lst =
---   n | n == 0    = print lst
---     | n > k     = ppr n
---     | otherwise = print "end"
-
--- primePartitions :: Integer -> Integer -> [Integer] -> [Integer]
-
--- primePartitions n k lst =
---   if n == 0 then
---     lst
---   else
---     if n > k then
---       map (primePartitions2 n k lst) (primesBetween (k+1) n)
---     else []
-    
--- primePartitions2 :: Integer -> Integer -> [Integer] -> Integer -> Integer
-
--- primePartitions2 n k lst p = 
---   primePartitions (n-p) p (lst++[p])
-
---  n = n - p
---  k = p
---  lst ++ [p]
---  if n == 0 then
---    print lst
---  else if n > k then
---    map (primePartitions2 n k lst) primesBetween (k+1) n
-
+main = do
+  putStrLn "Enter a number:"
+  n <- getLine
+  primePartitions (read n)
