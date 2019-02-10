@@ -1,0 +1,161 @@
+V "GNAT Lib v4.9"
+M P W=b
+P SS ZX
+
+RN
+RV NO_ACCESS_SUBPROGRAMS
+RV NO_ALLOCATORS
+RV NO_DISPATCH
+RV NO_DISPATCHING_CALLS
+RV NO_EXCEPTION_HANDLERS
+RV NO_EXCEPTION_PROPAGATION
+RV NO_EXCEPTIONS
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLICIT_CONDITIONALS
+RV NO_IMPLICIT_DYNAMIC_CODE
+RV NO_IMPLICIT_LOOPS
+RV NO_LOCAL_ALLOCATORS
+RV NO_NESTED_FINALIZATION
+RV NO_RECURSION
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_STREAMS
+RV NO_UNCHECKED_ACCESS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV NO_IMPLEMENTATION_PRAGMAS
+RV NO_IMPLICIT_ALIASING
+RV SPARK_05
+
+U primepartitions%b	primepartitions.adb	7c1d3b2a NE OO SU
+W ada%s			ada.ads			ada.ali
+W ada.containers%s	a-contai.ads		a-contai.ali
+Z ada.containers.generic_array_sort%s
+W ada.containers.vectors%s
+W ada.exceptions%s	a-except.adb		a-except.ali
+Z ada.finalization%s	a-finali.adb		a-finali.ali
+Z ada.iterator_interfaces%s
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+Z ada.numerics.aux%s	a-numaux.adb		a-numaux.ali
+W ada.numerics.generic_elementary_functions%s
+W ada.streams%s		a-stream.adb		a-stream.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z ada.unchecked_deallocation%s
+W system%s		system.ads		system.ali
+W system.address_image%s  s-addima.adb		s-addima.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.exn_llf%s	s-exnllf.adb		s-exnllf.ali
+W system.fat_flt%s	s-fatflt.ads		s-fatflt.ali
+W system.finalization_masters%s  s-finmas.adb	s-finmas.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.storage_pools%s  s-stopoo.adb		s-stopoo.ali
+W system.storage_pools.subpools%s  s-stposu.adb	s-stposu.ali
+W system.stream_attributes%s  s-stratt.adb	s-stratt.ali
+W system.val_int%s	s-valint.adb		s-valint.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-contai.ads		20101025135029 61e5e089
+D a-cgarso.ads		20070406091342 9129bfa8
+D a-convec.ads		20120217141546 0aaf3975
+D a-convec.adb		20140220134615 a022038f
+D a-except.ads		20140129161953 f86a4103
+D a-finali.ads		20111121113555 52ecdc1b
+D a-ioexce.ads		20140225151544 e4a01f64
+D a-iteint.ads		20110906092602 7c7305e9
+D a-numeri.ads		20080324174807 bb51c45a
+D a-numaux.ads		20140129155348 243fe0b7
+D a-ngelfu.ads		20140123165334 ff061ca9
+D a-ngelfu.adb		20121001094122 859ccdff
+D a-stream.ads		20140122164720 1a984740
+D a-tags.ads		20111212115430 6c0509d0
+D a-textio.ads		20140129155348 386df5d4
+D a-unccon.ads		20070406091342 f9eb8f06
+D a-uncdea.ads		20070406091342 f15a5ed1
+D interfac.ads		20140225151838 69adb1b9
+D i-cstrea.ads		20130412125801 8128536b
+D primepartitions.adb	20190210231245 b1d9eb22
+D system.ads		20160213141829 90249111
+D s-addima.ads		20090409150019 a1ec9d3a
+D s-conca2.ads		20140225151544 02a0d7d0
+D s-crtl.ads		20140225151544 840e6817
+D s-exctab.ads		20140225151139 54135002
+D s-exnllf.ads		20121004090553 81841eef
+D s-fatflt.ads		20090409150019 11beb392
+D s-fatgen.ads		20140129155348 9267ca45
+D s-ficobl.ads		20120709130952 55a71d43
+D s-finmas.ads		20140225151139 814daec4
+D s-finroo.ads		20120426095924 4ff27390
+D s-imgint.ads		20090409150019 02dbe0c2
+D s-parame.ads		20140225151139 ab8cb46a
+D s-pooglo.ads		20110804083314 542f33d0
+D s-secsta.ads		20140225151139 86a2856d
+D s-soflin.ads		20140225151139 aa763b52
+D s-stache.ads		20140225151139 a37c21ec
+D s-stalib.ads		20140225151139 a891183f
+D s-stoele.ads		20140225151139 2dc34a04
+D s-stoele.adb		20140225151139 ed88f8fb
+D s-stopoo.ads		20131010103753 b16154c2
+D s-stposu.ads		20121005142121 ffeba1c5
+D s-stratt.ads		20131014135145 aedef97e
+D s-traent.ads		20140225151139 b5116092
+D s-unstyp.ads		20140225151139 510692af
+D s-valint.ads		20090409150019 48a52a3f
+D s-wchcon.ads		20140225151139 1b7d22d2
+X 1 ada.ads
+16K9*Ada 19e8 21|1r6 1r23 2r6 3r6 4r6 8r34
+X 2 a-contai.ads
+16K13*Containers 24e19 21|3r10 4r10
+X 4 a-convec.ads
+45k24*Vectors 474e27 21|3w21 10r29
+49I12 Extended_Index{integer}
+55R9 Vector<7|48R9> 21|26r44[10] 27r10[10] 37r60[10] 38r14[10] 39r12[10]
+. 73r6[10]
+243U14 Append 21|31s13[10] 51s17[10]
+289V13 Last_Index{49I12[21|10]} 21|43s23[10] 49s29[10]
+X 9 a-iteint.ads
+24h9 Forward_Iterator
+32h9 Reversible_Iterator<24R9[4|70]>
+X 10 a-numeri.ads
+16K13*Numerics 32e17 21|2r10 8r38
+X 12 a-ngelfu.ads
+39k22*Generic_Elementary_Functions 154e46 21|2w19 8r47
+42V13 Sqrt{float} 21|18s28[8]
+X 16 a-textio.ads
+49K13*Text_IO 471e16 21|1w10 1r27
+242U14*Put 21|42s7 44s9 77s3
+249U14*Get_Line 21|62s5
+263U14*Put_Line 21|46s7
+X 21 primepartitions.adb
+6U11*PrimePartitions 6b11 81l5 81t20
+8K11 Value_Functions[12|39] 9r7
+10K11 Vector_Pkg[4|45] 11r11
+13V12 IsPrime{boolean} 13b12 13>21 24l7 24t14 30s11
+13i21 N{positive} 15r8 18r39 19r11
+18i9 I{integer} 19r17
+26V12 Primes{4|55R9[10]} 26b12 26>20 26>23 35l7 35t13 48s20
+26i20 A{positive} 29r14
+26i23 B{positive} 29r19
+27r5 Vec{4|55R9[10]} 31m9 31r9 34r12
+29i9 I{integer} 30r19 31r20
+37U13 PrimePartitions 37b13 37>30 37>42 37>55 52s9 55l7 55t22 79s3
+37i30 N{natural} 41r9 47r12 48r34 52r25
+37i42 K{positive} 47r16 48r28
+37r55 Vec{4|55R9[10]} 42r25 43r19 44r34 50r20
+38r3 PrimesVec{4|55R9[10]} 48m7 49r19 51r24 52r29 52r43
+39r3 CopyVec{4|55R9[10]} 50m9 51m9 51r9 52r57
+43i11 I{integer} 44r38
+49i11 I{integer} 51r34 52r39 52r53
+58V12 Get_String{string} 58b12 64l7 64t17 67s28
+59a5 Line{string} 62m15 63r12
+60i5 Last{natural} 62m21 63r23
+66V12 Get_Integer{integer} 66b12 71l7 71t18 78s8
+67a5 S{string} 69r27
+73r3 V{4|55R9[10]} 79r25
+74i3 N{integer} 78m3 79r19
+
