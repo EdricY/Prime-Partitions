@@ -13,10 +13,6 @@ primesBetween :: Integer -> Integer -> [Integer]
 primesBetween a b =
   [ x | x <- [a..b+1], isPrime x ]
 
-plus3 :: Integer -> Integer
-
-plus3 x = x+3
-
 -- https://stackoverflow.com/questions/19772427/haskell-generate-subsets
 subsets :: [Integer] -> [[Integer]]
 subsets [] = [[]]
