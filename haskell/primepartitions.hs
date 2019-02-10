@@ -51,4 +51,5 @@ sumsTo n [] =
 main = do
   putStrLn "Enter a number:"
   n <- getLine
+  putStrLn ""
   primePartitions (read n)
