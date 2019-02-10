@@ -3,7 +3,7 @@ with Ada.Numerics.Generic_Elementary_Functions;
 with Ada.Containers.Vectors;
 use  Ada.Containers;
 
-procedure Main 
+procedure PrimePartitions 
 is
   package Value_Functions is new Ada.Numerics.Generic_Elementary_Functions (Float);
   use Value_Functions;
@@ -78,4 +78,4 @@ begin
   N := Get_Integer;
   PrimePartitions(N, 1, V);
 
-end Main;
+end PrimePartitions;
