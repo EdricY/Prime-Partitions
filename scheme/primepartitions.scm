@@ -1,3 +1,6 @@
+#!/usr/bin/racket
+#lang racket
+
 (define (isPrime n) 
   (isPrime2 n 2)
 )
@@ -22,19 +25,22 @@
 )
 
 (define (prime-partitions n k lst)
-  (cond 
-    ((= n 0) (display-partition lst))
-    ((> n k) (map (lambda (p)
-        (prime-partitions (- n p) p (cons p lst))
+  (begin
+    (cond 
+      ((= n 0) (display-partition lst))
+      ((> n k) (map (lambda (p)
+          (prime-partitions (- n p) p (cons p lst))
+          )
+          (primes (+ 1 k) n)
         )
-        (primes (+ 1 k) n)
       )
     )
+    (void)
   )
 )
 
 (define (display-partition lst)
-  (if (null? (cdr lst)) 
+  (if (null? (cdr lst))
     (display (string-append(number->string (car lst)) "\n"))
     (begin
       (display (string-append (number->string (car lst)) " + "))
